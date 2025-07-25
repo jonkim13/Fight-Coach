@@ -1,0 +1,59 @@
+.dashboard-section {
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f2e9e4;
+    padding: 0 20px;
+  }
+  
+  .section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .section-title {
+    font-size: 4rem;
+    font-weight: bold;
+    background: #22223B;
+    color: #C9ADA7;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .image-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .color-block {
+    width: 500px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    transform-origin: left center;
+  }
+  
+  .bar-and-text {
+    background: #FFFFFF;
+    width: 40px;
+    height: 300px;
+    margin-left: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-weight: bold;
+    color: #22223B;
+  }

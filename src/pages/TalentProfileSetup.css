@@ -1,0 +1,140 @@
+body {
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    background-color: #f2e9e4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .profile-setup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  .profile-setup-container h1 {
+    color: #22223b;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-setup-container h2 {
+    color: #22223b;
+    margin-bottom: 1rem;
+  }
+  
+  /* Profile Picture Upload */
+  .profile-pic-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-placeholder, .profile-preview {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #c9ada7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    color: white;
+  }
+  
+  .profile-preview {
+    object-fit: cover;
+  }
+  
+  /* Inputs */
+  input, textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: 1px solid #9a8c98;
+    font-size: 1rem;
+  }
+  
+  .height-options {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 40%; /* ✅ small contained */
+    justify-content: flex-start; /* ✅ <<< THIS IS THE FIX */
+    scroll-behavior: smooth;
+  }
+  
+  .height-options::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .height-options::-webkit-scrollbar-thumb {
+    background-color: #4a4e69;
+    border-radius: 20px;
+  }
+  
+  .height-options::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .height-btn {
+    flex: 0 0 auto;
+    padding: 0.5rem 1.5rem;
+    background: #e5e5e5;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    scroll-snap-align: start;
+    cursor: pointer;
+  }
+  
+  .height-btn.selected {
+    background: #4a4e69;
+    color: white;
+  }
+  
+  /* Fighting Styles */
+  .style-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .style-btn {
+    padding: 0.5rem 1rem;
+    background: #e5e5e5;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .style-btn.selected {
+    background: #4a4e69;
+    color: white;
+  }
+  
+  /* Buttons */
+  .next-btn, .submit-btn {
+    margin-top: 1rem;
+    padding: 0.75rem 2rem;
+    background-color: #4a4e69;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .next-btn:hover, .submit-btn:hover {
+    background-color: #22223b;
+  }

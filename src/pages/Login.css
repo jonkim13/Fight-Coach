@@ -1,0 +1,89 @@
+/* Base resets just for the login page */
+.login-container {
+    display: flex;
+    min-height: 100vh;    /* stretch to fill viewport if desired */
+    overflow-y: auto;     /* allow vertical scroll on this container only */
+  }
+  
+  /* Left and right panels each take half the width, scroll their own content if needed */
+  .login-left,
+  .login-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;     /* if panel content grows, scroll it */
+  }
+  
+  /* Remove any global overflow rules */
+  html, body {
+    overflow: visible !important;
+    height: auto !important;
+  }
+  
+  /* Your existing styles */
+  .login-left {
+    background: #F2E9E4;
+    color: #22223B;
+  }
+  
+  .login-right {
+    background: linear-gradient(to bottom right, #4A4E69, #9A8C98);
+    color: white;
+    text-align: center;
+  }
+  
+  /* Transition wrapper */
+  .login-transition {
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  /* Form */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+  
+  /* Inputs */
+  .login-form input {
+    padding: 0.75rem;
+    border-radius: 10px;
+    border: 1px solid #9A8C98;
+    background: #ffffff;
+    color: #22223B;
+  }
+  
+  /* Buttons */
+  .sign-in-btn,
+  .sign-up-btn {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .sign-in-btn {
+    background-color: #4A4E69;
+    color: #fff;
+  }
+  
+  .sign-up-btn {
+    background: #fff;
+    color: #4A4E69;
+  }
+  
+  /* Messages */
+  .error {
+    color: red;
+    margin-top: 1rem;
+  }
+  
+  .success {
+    color: green;
+    margin-top: 1rem;
+  }

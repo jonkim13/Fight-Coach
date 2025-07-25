@@ -1,0 +1,15 @@
+.dashboard-wrapper {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .dashboard-content {
+    margin-left: 220px;
+    flex: 1;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
